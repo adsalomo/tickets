@@ -47,7 +47,7 @@ public class TicketServiceTest {
 		assertTrue(responseTicket.getId() == 1);
 	}
 	
-	@Test()
+	@Test
 	public void ticketReservationReject() {		
 		Ticket ticket = getReservedTicket();
 		
