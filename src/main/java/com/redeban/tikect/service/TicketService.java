@@ -26,7 +26,7 @@ public class TicketService {
 	}
 	
 	@Transactional
-	public void bookTicket(int ticketId, int userId) {
+	public Ticket bookTicket(int ticketId, int userId) {
 		Ticket ticket = ticketRepository
 				.findById(ticketId)
 				.orElseThrow(() -> new EntityNotFoundException("Invalid ticket"));
@@ -42,7 +42,7 @@ public class TicketService {
 		ticket.setUserId(user);
 		ticket.setUpdateDate(Utils.nowTimestamp());
 		
-		ticketRepository.save(ticket);
+		return ticketRepository.save(ticket);
 	}
 	
 	public Page<Ticket> getTickets(PaginationRequest paginationRequest) {
