@@ -1,0 +1,12 @@
+server:
+ port: 8006
+
+spring:
+ application:
+  name: demo-api-tickets
+ datasource:
+  url: ${MYSQL_HOST:jdbc:mysql://mysql-18547c6a-infracommerce-8a46.k.aivencloud.com:24632/defaultdb}
+  username: ${MYSQL_USER:avnadmin}
+  password: ${MYSQL_PASSWORD}
+  driver-class-name: com.mysql.cj.jdbc.Driver
+
