@@ -1,8 +1,4 @@
-# Validación número primo
-
-Ejecutar la clase com.redeban.ValidatePrime.java
-
-# Product API
+# Book Ticket API
 ## Tecnologías utilizadas
  * 1.	Open Jdk 17 o superior
  * 2.   Spring Boot 3.3.5
